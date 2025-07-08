@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Drone Navigation - Ali A. Shah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl font-bold text-gray-900">Ali A. Shah</a>
+                    <span class="ml-4 text-gray-500">|</span>
+                    <span class="ml-4 text-gray-700">Autonomous Drone Navigation</span>
+                </div>
+                <a href="/" class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Autonomous Drone Navigation</h1>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                    Real-time computer vision system for autonomous drone navigation using deep learning and sensor fusion
+                </p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">Python</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">TensorFlow</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">OpenCV</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">ROS</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">C++</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        This project demonstrates an advanced autonomous navigation system for drones, combining computer vision, 
+                        machine learning, and real-time control systems to enable safe and efficient autonomous flight.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        The system processes real-time camera feeds, detects obstacles, plans optimal paths, and executes 
+                        precise flight maneuvers while maintaining stable flight characteristics.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/alishah/autonomous-drone-navigation" 
+                           class="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors">
+                            <i class="fab fa-github mr-2"></i>View Source Code
+                        </a>
+                        <a href="#demo" 
+                           class="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-play mr-2"></i>Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Drone Navigation" 
+                         class="rounded-lg shadow-xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Technical Implementation</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-camera text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Computer Vision</h3>
+                    <p class="text-gray-600">
+                        Real-time object detection using YOLO v5 for obstacle identification and depth estimation through stereo vision.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-route text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Path Planning</h3>
+                    <p class="text-gray-600">
+                        A* algorithm with dynamic replanning for optimal route calculation while avoiding detected obstacles.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cogs text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Control System</h3>
+                    <p class="text-gray-600">
+                        PID controllers for stable flight with sensor fusion from IMU, GPS, and barometer for precise positioning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Interactive Demo</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="text-center mb-8">
+                    <p class="text-lg text-gray-600 mb-4">
+                        Experience the autonomous navigation system in action
+                    </p>
+                    <div class="bg-gray-100 rounded-lg p-8 min-h-96 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-drone text-6xl text-gray-400 mb-4"></i>
+                            <p class="text-gray-500 text-lg">Interactive Demo Coming Soon</p>
+                            <p class="text-gray-400">This space will showcase the live navigation system</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Key Features</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Real-time obstacle detection and avoidance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Dynamic path replanning during flight</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Multi-sensor fusion for robust navigation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Emergency landing protocols</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Performance Metrics</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Detection Accuracy</span>
+                                <span class="font-semibold">95.2%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Response Time</span>
+                                <span class="font-semibold">< 50ms</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Flight Stability</span>
+                                <span class="font-semibold">±2cm precision</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Battery Efficiency</span>
+                                <span class="font-semibold">25 min flight time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 Ali A. Shah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
