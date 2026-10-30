@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network Accelerator - Ali A. Shah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl font-bold text-gray-900">Ali A. Shah</a>
+                    <span class="ml-4 text-gray-500">|</span>
+                    <span class="ml-4 text-gray-700">Neural Network Accelerator</span>
+                </div>
+                <a href="/" class="text-blue-600 hover:text-blue-800 transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-600 to-pink-700 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Neural Network Accelerator</h1>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                    Custom hardware accelerator for neural network inference on FPGA platforms
+                </p>
+                <div class="flex flex-wrap justify-center gap-3">
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">Verilog</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">FPGA</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">SystemVerilog</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">Python</span>
+                    <span class="px-4 py-2 bg-white/20 rounded-full text-sm">Hardware Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Project Overview</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        A high-performance hardware accelerator designed specifically for neural network inference, 
+                        implemented on FPGA platforms to achieve significant speedup over traditional CPU implementations.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8">
+                        The accelerator features custom processing elements, optimized memory hierarchy, and parallel 
+                        computation units designed to maximize throughput while minimizing power consumption.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/alishah/neural-network-accelerator" 
+                           class="inline-flex items-center px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors">
+                            <i class="fab fa-github mr-2"></i>View Source Code
+                        </a>
+                        <a href="#demo" 
+                           class="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-microchip mr-2"></i>Architecture Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Neural Network Accelerator" 
+                         class="rounded-lg shadow-xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Implementation -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Architecture Design</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microchip text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Processing Elements</h3>
+                    <p class="text-gray-600">
+                        Custom PE array with optimized MAC units for parallel matrix operations and convolutions.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-memory text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Memory Hierarchy</h3>
+                    <p class="text-gray-600">
+                        Multi-level memory system with on-chip buffers and optimized data flow patterns.
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tachometer-alt text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Control Unit</h3>
+                    <p class="text-gray-600">
+                        Sophisticated control logic for instruction scheduling and resource management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Benchmarks -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Performance Benchmarks</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="grid md:grid-cols-4 gap-6 mb-8">
+                    <div class="text-center p-4 bg-purple-50 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2">ResNet-50</h3>
+                        <p class="text-3xl font-bold text-purple-600">5.2x</p>
+                        <p class="text-sm text-gray-600">Speedup vs CPU</p>
+                    </div>
+                    
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2">MobileNet</h3>
+                        <p class="text-3xl font-bold text-blue-600">4.3x</p>
+                        <p class="text-sm text-gray-600">Speedup vs CPU</p>
+                    </div>
+                    
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2">YOLO v5</h3>
+                        <p class="text-3xl font-bold text-green-600">5.2x</p>
+                        <p class="text-sm text-gray-600">Speedup vs CPU</p>
+                    </div>
+                    
+                    <div class="text-center p-4 bg-yellow-50 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2">BERT-Base</h3>
+                        <p class="text-3xl font-bold text-yellow-600">5.4x</p>
+                        <p class="text-sm text-gray-600">Speedup vs CPU</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Hardware Specifications</h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">FPGA Platform:</span>
+                                <span class="font-semibold">Xilinx Zynq-7000</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Logic Cells:</span>
+                                <span class="font-semibold">85K</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">DSP Slices:</span>
+                                <span class="font-semibold">220</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Block RAM:</span>
+                                <span class="font-semibold">4.9 Mb</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Operating Frequency:</span>
+                                <span class="font-semibold">200 MHz</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">Key Achievements</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>5x average speedup over CPU implementations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>60% reduction in power consumption</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Support for multiple neural network architectures</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span>Configurable precision (8-bit, 16-bit)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Architecture Visualization</h2>
+            
+            <div class="bg-gray-50 rounded-lg p-8">
+                <div class="bg-white rounded-lg p-8 min-h-96 flex items-center justify-center mb-8">
+                    <div class="text-center">
+                        <i class="fas fa-microchip text-6xl text-gray-400 mb-4"></i>
+                        <p class="text-gray-500 text-lg">Interactive Architecture Diagram Coming Soon</p>
+                        <p class="text-gray-400">This space will showcase the FPGA design and data flow</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-lg text-gray-600 mb-4">
+                        Explore the custom neural network accelerator architecture
+                    </p>
+                    <button class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                        <i class="fas fa-play mr-2"></i>Start Architecture Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 Ali A. Shah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
